@@ -1,4 +1,4 @@
-package com.TicTacToe;
+package com.fellowshipWorkshop;
 import java.util.Scanner;
 public class TicTacToeGame {
     //Assigning empty space
@@ -11,7 +11,8 @@ public class TicTacToeGame {
         }
         return board;
     }
-    public char userInput()
+	 //Taking user input
+    public static char userInput()
     {
     	System.out.println("choose any of option X AND 0");
         Scanner sc=new Scanner(System.in);
@@ -29,8 +30,7 @@ public class TicTacToeGame {
     
     public static void main(String[] args) {
     	System.out.println("Tic Tac Toe Game");
-    	TicTacToeGame ticTacToeGame = new TicTacToeGame();
-        char[] board = ticTacToeGame.createBoard();
-        char userOption = ticTacToeGame.userInput();
+    	createBoard();
+		userInput();
     }
 }
